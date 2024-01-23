@@ -1,14 +1,19 @@
 import controller.BankController;
 import dao.BankDAO;
 
+import java.nio.file.Path;
+
 public class BankApp {
     public static void main(String[] args) {
-        String url = "selectAll";
 
         BankDAO dao = new BankDAO();
         BankController con = new BankController(dao);
         Dispatcher dis = new Dispatcher(con);
-        dis.route(url);
 
+        //dis.route("/insert");
+        //dis.route("/delete");
+        //dis.route("/update");
+        dis.route("/selectOne");
+        //dis.route("/selectAll");
     }
 }
