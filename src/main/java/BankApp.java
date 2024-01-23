@@ -14,7 +14,7 @@ public class BankApp {
         // http://bank.com/account/1 PUT (update)
         // POST와 PUT은 반드시 body가 필요하다.
         // 뒤의 숫자는 자원명이 아니라 식별자이다. = 식별자요청.
-        // get요청은 http에 body가 없다
+        // GET요청은 http에 body가 없다.
 
         System.out.println("http 메서드를 입력하세요.");
         String method = sc.nextLine();
